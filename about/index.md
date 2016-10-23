@@ -5,16 +5,17 @@ image:
   feature: about.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
-comments: true
+comments: false
 modified: 2016-02-01
 ---
 
-This blog is essentially an online journal of things I find interesting, some 
-tutorials explaining some thing I may have come across and which took me a
-while to understand, setup guides and general thoughts. I have found that 
-trying to explain something in a clear, simple way, tests my understanding. The
-blogs posts are thus also a way to help myself -- hopefully some of the posts 
-will be useful to other people as well.
+This is essentially an online journal.
+
+The posts will be tutorial-like explaining something I may have come across and 
+which took me a while to understand, setup guides or general thoughts. I have 
+found that trying to explain something in a clear, simple way, tests my 
+understanding. The blogs posts are thus also a way to help myself and 
+hoperfully some of the posts will be useful to other people as well.
 
 My main interests are in software development, specifically in distributed
 computing, parallelism, and optimisation, and how these can be used to solve 
@@ -24,12 +25,13 @@ I'm currently doing an MPhil in Scientific Computing at the University of
 Cambridge. My work involves looking at how to optimally make use of
 computational hardware to accelerate solving multi-physics problems, and how
 such techniques can be incorporated into software libraries with clear
-interfaces, allowing anyone to gain the benefits.
+interfaces, allowing anyone to reap the benefits.
 
-I try to work personal projects to explore new areas, and I try to document and
-maintain them well so that others can learn from them. If any of the projects
-interest you, send me an email and I'd be happy to work with you to take the 
-project further. Here is a list of some of them:
+I try to work personal projects to explore new areas, when I have some extra
+tome, and I try to document and maintain them well so that others can learn 
+from them. If any of the projects interest you, send me an email and I'd be 
+happy to work with you to take the project further. Here is a list of some of 
+them:
 
 ## Projects
 
@@ -40,7 +42,7 @@ project further. Here is a list of some of them:
   performance comparable with the Blitz++ CPU array library, and the Thrust GPU
   library.
 
-* ___```Meta:```__  A metaprogramming library which provides various
+* ___```Meta:```___  A metaprogramming library which provides various
   compile-time functionality. This is a constantly evolving project, and
   whenever I require some compile-time functionality, or think of something
   which may be generally useful,
@@ -59,7 +61,7 @@ project further. Here is a list of some of them:
 
 ## Publications
 
-The following is a list of papers I have published (hopefully this will grow):
+The following is a list of papers I have written (hopefully this will grow):
 
 R. Clucas and S. Levitt, CAPP: A C++ Aspect-Oriented Based Framework for Parallel Programming with OpenCL, in Proceedings of the 2015 Annual Research Conference on South African Institute of Computer Scientists and Information Technologists, ser. SAICSIT 15. New York, NY, USA: ACM, 2015, pp. 10:110:10. [Online]. Available: [http://doi.acm.org/10.1145/2815782.2815818](http://doi.acm.org/10.1145/2815782.2815818) [Camera ready draft- [[1]](https://github.com/robclu/capp/blob/master/documentation/final_version/Capp.pdf)]
 
