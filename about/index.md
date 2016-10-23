@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: 
 image:
   feature: about.jpg
   credit: WeGraphics
