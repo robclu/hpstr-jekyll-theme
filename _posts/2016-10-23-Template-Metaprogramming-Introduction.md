@@ -3,8 +3,8 @@ layout: post
 title: Template Metaprogramming Basics
 excerpt: "Towards a metaprogramming understanding!"
 tags: [C++, metaprogramming]
-modified: 2015-09-16
 comments: true
+modified: 2016-11-23
 ---
 
 [Template metaprogramming](https://en.wikipedia.org/wiki/Template_metaprogramming) 
