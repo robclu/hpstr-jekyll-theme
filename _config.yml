@@ -1,6 +1,6 @@
 title:            Rob Clucas
 description:      A blog for some useful things I've come across.
-disqus_shortname: 
+disqus_shortname: https-robclu-github-io
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
@@ -17,7 +17,7 @@ owner:
   twitter:        
   facebook:       
   github: robclu
-  stackexchange:  
+  stackexchange: robclucas
   linkedin:       
   instagram:      
   flickr:         
