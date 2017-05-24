@@ -1,5 +1,5 @@
 title:            Rob Clucas
-description:      A blog for some useful things I've come across.
+description:      My personal blog.
 disqus_shortname: https-robclu-github-io
 reading_time:     true
 words_per_minute: 200
@@ -10,15 +10,15 @@ url:
 # Owner/author information
 owner:
   name:           Rob Clucas
-  avatar:         bio-photo.jpg
-  bio:            "Student -- always learning."
+  avatar:         bio-photo-2.jpg
+  bio:            "Computer Programmer."
   email:          robjclucas@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter: rob_clucas 
   facebook:       
   github: robclu
-  stackexchange: robclucas
-  linkedin:       
+  stackexchange:
+  linkedin: linkedin.com/in/robert-clucas-24961a106
   instagram:      
   flickr:         
   tumblr:         
