@@ -9,55 +9,42 @@ comments: false
 modified: 2016-02-01
 ---
 
-This is essentially an online journal.
+Hello, and welcome to my online blog -- I hope you find something useful here :)
 
-The posts will be tutorial-like explaining something I may have come across and 
-which took me a while to understand, setup guides or general thoughts. I have 
-found that trying to explain something in a clear, simple way, tests my 
-understanding. The blogs posts are thus also a way to help myself and 
-hoperfully some of the posts will be useful to other people as well.
-
-My main interests are in software development, specifically in distributed
-computing, parallelism, and optimisation, and how these can be used to solve 
-real world problems.
+I'm Rob, and I enjoy programming. I mostly write C++ code, and what I find most interesting is concurrency (shared memory programming, interprocessses, and massive parallelism), graphics, optimisation, and physics. I also like python, although I don't really have an advanced enough knowledge to provide an accurate
+commentary on it, so it's unlikely many blog posts will be python related. This may change in the future though.
 
 I'm currently doing an MPhil in Scientific Computing at the University of
-Cambridge. My work involves looking at how to optimally make use of
-computational hardware to accelerate solving multi-physics problems, and how
-such techniques can be incorporated into software libraries with clear
-interfaces, allowing anyone to reap the benefits.
+Cambridge, where I'm looking at using GPUs to accelerate multi-physics problems.
 
-I try to work personal projects to explore new areas, when I have some extra
-tome, and I try to document and maintain them well so that others can learn 
-from them. If any of the projects interest you, send me an email and I'd be 
-happy to work with you to take the project further. Here is a list of some of 
-them:
+I try to constantly keep learning, and to work on personal projects which explore the new things I learn. I think that writing about something is a good way to test your understanding, and it's always nice to have a reference to go back to at a later stage.
 
-## Projects
+Recently, I've started storing my project related work in a central place, so
+most of my recent work can be found at the [Voxel repository](https://github.com/Voxelated), for which the documentation is at [Voxel documentation](https://voxelated.github.io/index.html). My [GitHub repository](https://github.com/robclu) also has some code samples, although most of what I do is no longer stored there. The most notable non-academic projects are:
 
-* ___```Jolt:```___ An expression template library for array manipulation. The
-  library provides a clear interface to the user, where the appearance of
-  operations look as close as possible to their formal mathematical
-  representation. The aim is to support a CPU and GPU backend, and to provide
-  performance comparable with the Blitz++ CPU array library, and the Thrust GPU
-  library.
+## Non-Academic Projects
 
-* ___```Meta:```___  A metaprogramming library which provides various
-  compile-time functionality. This is a constantly evolving project, and
-  whenever I require some compile-time functionality, or think of something
-  which may be generally useful,
+* __Voxel:__ This is a general purpose utility library that I use throughout
+  other projects. Some of the notable features are general GPU invokable Lambda, some heterogeneous classes (CPU and GPU support, like Tuple for example), threading utility, and system information for large system configurations. You can browse the [repository](https://github.com/Voxelated/Voxel) or the [documentation](https://voxelated.github.io/libraries/voxel/index.html)
+
+* __Conky:__ This is a concurrency and parallelism library. It contains
+  concurrent data structures and high-level abstractions which allow large-scale
+  distributed and massively parallel code to be written, simply. It's a work in
+  progress, but you can check out the [repository](https://github.com/Voxelated/Conky) or the [documentation](https://voxelated.github.io/libraries/conky/index.html)
+
+* __Xpress:__ An expression template library which allows numpy like array
+  creation and operations in C++, which are accelerated on the GPU if the system
+  supports the GPU, or many-core systems if there is support for that. See the
+  [repository](https://github.com/Voxelated/Xpress).
+
+
+## Academic Projects
 
 * ___```Parahaplo:```___ A parallel implementation of the minimum 
   error-correction individual haplotype assembly problem -- an NP-hard problem
-  --using a parallel graph-based GPU search. The project in its current 
-  implementation can achieved a 50x performance improvement over existing 
-  (non-parallel) algortihms on generated DNA datasets. The accuracy is slightly
-  less than the best solutions in existing research. I'm sure that the cause of
-  the rediced accuracy is a software bug, and will hopefully fix it when I get 
-  a chance. The codebase also needs to be refactored, which I'll do once I've
-  finished with some of the other library's which are designed to make the
-  development of this kind of an application much simpler. 
-  [Parahaplo Repository](https://github.com/robclu/parahaplo)
+  -- using a parallel graph search executed on the GPU. The project in its current (not updated) implementation can achieved a 50x performance. The accuracy is slightly less than the best solutions in existing research. I'm sure that the cause of the rediced accuracy is a software bug, and will hopefully fix it when I get a chance. The codebase also needs to be 
+  refactored, which I'll hopefully get a chance to do eventually. Here is the
+  [repository](https://github.com/robclu/parahaplo), as well as the [paper](https://github.com/robclu/parahaplo/blob/master/doc/Parahaplo.pdf).
 
 ## Publications
 
