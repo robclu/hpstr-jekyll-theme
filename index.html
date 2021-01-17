@@ -13,35 +13,39 @@
 </head>
 
 <body>
-  <div class="container">
-    <h2 class="header center blue-text darken-2">Rob Clucas</h2>
+  <div id="about" class="container">
+    <div class="row">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h2 class="header center teal-text lighten-1">Rob Clucas</h2>
+        <p class="center grey-text text-lighten-1">
+          I'm a C++ software developer with experience optimising large-scale GPU applications
+        </p>
+        <div class="row center">
+          <a class="icon teal-text lighten-1" href="https://github.com/robclu">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="icon teal-text lighten-1" href="https://www.linkedin.com/in/robert-clucas-24961a106">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="icon teal-text lighten-1" href="https://twitter.com/rob_clucas">
+            <i class="large fab fa-twitter"></i>
+          </a>
+          <a class="icon teal-text lighten-1" href="mailto:robjclucas@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <hr style="border-color: #727878; opacity: 0.2">
+      </div>
+    </div>
   </div>
 
-  <div class="row center">
-    <a href="mailto:robjclucas@gmail.com">robjclucas@gmail.com</a>
-    <br>
-    <a href="mailto:rjc201@cam.ac.uk">rjc201@cam.ac.uk</a>
-  </div>
 
-  <div class="row center">
-    <a href="https://github.com/robclu">
-      <i class="fab fa-github indigo-text"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/robert-clucas-24961a106">
-      <i class="fab fa-linkedin indigo-text"></i>
-    </a>
-    <a href="https://twitter.com/rob_clucas">
-      <i class="fab fa-twitter indigo-text"></i>
-    </a>
-  </div>
-
-
-  <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l4 offset-l4">
+  <div class="row grey-text text-darken-3">
+    <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
       <p class="z-depth-0 justified">
-        I am a final year PhD Student in the <a href="https://www.lsc.phy.cam.ac.uk/">Laboratory for Scientific Computing</a> at the University of Cambrige, supervised by <a href="https://www.lsc.phy.cam.ac.uk/directory/blakely">Dr Philip Blakely</a> and <a href="https://www.lsc.phy.cam.ac.uk/directory/nikiforakis">Prof Nikos Nikiforakis</a>.
+        I am a final year PhD Student in the <a class="teal-text" href="https://www.lsc.phy.cam.ac.uk/">Laboratory for Scientific Computing</a> at the University of Cambrige, supervised by <a class="teal-text" href="https://www.lsc.phy.cam.ac.uk/directory/blakely">Dr Philip Blakely</a> and <a class="teal-text" href="https://www.lsc.phy.cam.ac.uk/directory/nikiforakis">Prof Nikos Nikiforakis</a>.
         <br></br>
-        My research interests are primarily in distributed computing, particularly the application of challenging problems to multi-gpu systems. My recent reseach has involved developing a framwork which makes large-scale multi-gpu programming accessible with minimal GPU knowledge, <a href="https://github.com/robclu/ripple">see ripple</a>, and using it to solve difficult real-world problems in fluid and solid dynamics which require massive computational resources.
+        My research interests are primarily in distributed computing, particularly the application of challenging problems to multi-gpu systems. My recent reseach has involved developing a framwork which makes large-scale multi-gpu programming accessible with minimal GPU knowledge, <a class="teal-text" href="https://github.com/robclu/ripple">see ripple</a>, and using it to solve difficult real-world problems in fluid and solid dynamics which require massive computational resources.
         <br></br>
         I have been using C++ and CUDA for the past 7 years, and enjoy optimising applications, both for multi-threaded CPUs and especially for GPUs. I am also interested in machine learning, both in keeping up with the latest research, as well as in exploring existing frameworks such as PyTorch and Tensorflow to understand how they work and potentially contirubute in the future.
         <br></br>
@@ -54,13 +58,250 @@
     </div>
   </div>
 
+  <div class="row alternate">
+    <div id="education">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h2 class="header center teal-text">Education</h2>
+        <hr style="border-color: #727878; opacity: 0.2">
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script defer src="js/all.js"></script>
-  <!--load all styles -->
+        <div class="row">
+          <div class="col m4">
+            <h5>PhD in Physics</h5>
+            <p class="bold">
+              University of Cambridge
+            </p>
+            <p>
+              Jan 2018 - March 2022
+            </p>
+          </div>
+          <div class="col m8">
+            <p>
+              <strong>Advisor : </strong>
+              Dr Philip Blakely & Prof Nikos Nikiforakis<br>
+              <strong>Thesis : </strong> Acceleration of Fluid and Solid Dynamics on Massively Parallel Systems<br>
+              <br>
+              I have developed a general purpose compute framework which allows parallel programs with flexible data layout (AoS/SoA) to be executed on many-gpu systems with minimal knowledge of distributed programming or GPUs, and without performance compromise.
+              I have used the framework to solve large multi-material interaction problems in computational fluid and solid dynamics on many GPUs, which has not previously been done.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col m4">
+            <h5>MPhil in Scientific Computing</h5>
+            <p class="bold">
+              University of Cambridge
+            </p>
+            <p>
+              Sept 2016 - Sept 2017
+            </p>
+          </div>
+          <div class="col m8">
+            <p>
+              <strong>Advisor : </strong>Dr Philip Blakely<br>
+              <strong>Thesis : </strong> Embedded Boundary Methods on Highly Parallel Architectures
+              <br><br>
+              I developed a GPU solution for a problem in computational fluid dynamics, the cut cell problem, which was an order of magnitude improvement compared to a parallel CPU implementation, and identified areas where further performance improvements could be
+              made.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col m4">
+            <h5>BSc in Electrical and Information Engieering</h5>
+            <p class="bold">
+              University of the Witwatersrand
+            </p>
+            <p>
+              Jan 2012 - Nov 2015
+            </p>
+          </div>
+          <div class="col m8">
+            <p>
+              <strong>Advisor : </strong>Prof Scott Hazelhurst<br>
+              <strong>Thesis : </strong> Parahaplo: A Heterogeneous Haplotype Solver for Accelerating Graph Search with GPU Processing
+              <br><br>
+              In addition to the four years of coursework, for my final thesis I developed a GPU solver for the haplotype assembly problem--an NP hard problem in computational biology-- which was up to 50x faster than the current state of the art implementations, which were all CPU based.
+            </p>
+          </div>
+        </div>
+
+        <div class="row center grey-text text-darken-1">
+          *Please contact me for copies of any of the above work
+        </div>
+      </div>
+    </div>
+
+
+    <div id="experience">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h2 class="header center teal-text lighten-1">Experience</h2>
+        <hr style="border-color: #727878; opacity: 0.2">
+
+        <div class="row">
+          <div class="col m4">
+            <h5>Netronome Systems</h5>
+            <p>
+              Apr 2016 - Sept 2016
+            </p>
+            <p>
+              <i class="teal-text fas fa-link"></i>
+              <a class="teal-text" href="https://www.netronome.com/">
+                Netronome
+              </a>
+            </p>
+          </div>
+          <div class="col m8">
+            <p>
+              <strong>Software Engineer</strong>
+              <br>
+              I rewrote in-house packet generation software to allow configurable bursty traffic patterns, of up to 100Gbps, using a multi-threaded approach with a custom memory allocator. This resulted in improved performance by up to 60% over the previous version, allowing in-house servers to be used for packet generation.
+              <br><br>
+              I patched an open source packet generation engine to support Netronome’s network card drivers and in-house traffic pattern generator, allowing the performance of the network cards to be tested using open source software.
+              <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col m4">
+            <h5>Symmetry Electronics</h5>
+            <p>
+              Feb 2015 - March 2016
+            </p>
+            <p>
+              <i class="teal-text fas fa-link"></i>
+              <a class="teal-text" href="https://www.semiconductorstore.com/">
+                Symmetry
+              </a>
+            </p>
+          </div>
+          <div class="col m8">
+            <p>
+              <strong>Electrical Engineer</strong>
+              <br>
+              Designed and implemented the WAB1 board <a class="teal text" href="https://www.semiconductorstore.com/blog/2018/The-Symmetry-Exclusive-Wireless-Add-on-Board-WAB1-is-Ideal-for-Quickly-and-Easily-Bringing-IoT-Devices-to-Production/1865"></a>– a development board which bridges Bluetooth Low Energy and Cellular technologies – allowing simple proof-of-concept development for customers.
+              <br>
+              I also wrote an iOS app, software examples and documentation for the WAB1 board to allow users to get started quickly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End education and experience -->
+
+  <div id="research">
+    <div class="row">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h2 class="header center teal-text lighten-1">Research</h2>
+        <hr style="border-color: #727878; opacity: 0.2">
+
+        <h5 class="teal-text lighten-1">Submitted/Under Review</h5>
+        <div class="row">
+          <div class="col s11 offset-s1">
+            <p>
+              R. Clucas, P. Blakely, N. Nikiforakis, Ripple : Simplified Large-Scale Computation on Heterogeneous Architectures withPolymorphic Data Layout, Journal of Parallel and Distributed Computing, 2021 [ <i class="teal-text fas fa-link"></i>
+              <a class="teal-text">
+                Coming soon.
+              </a>]
+            </p>
+          </div>
+
+          <div class="col s11 offset-s1">
+            <p>
+              R. Clucas, P. Blakely, N. Nikiforakis, Simulation of Multiple Interacting Materials on Multiple GPUs with the Ghost Fluid Method, Computer Physics Communications, 2021 [ <i class="teal-text fas fa-link"></i>
+              <a class="teal-text">
+                Coming soon.
+              </a>]
+            </p>
+          </div>
+        </div>
+
+
+        <h5 class="teal-text lighten-1">Published</h5>
+        <div class="row">
+          <div class="col s11 offset-s1">
+            <p>
+              R. Clucas, S. Levitt, <a class="teal-text" href="http://dl.acm.org/citation.cfm?id=2815782.2815818">CAPP: A C++ Aspect-Oriented Based Framework for Parallel Programming with OpenCL</a>, in Proceedings of the 2015 Annual Research Conference on South African Institute of Computer Scientists and InformationTechnologists, ser. SAICSIT 15. New York, NY, USA: ACM, 2015, pp. 10:110:10
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="row">
+        <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+          <h2 class="header center teal-text lighten-1">Projects</h2>
+          <hr style="border-color: #727878; opacity: 0.2">
+          <p>The following is a selected list of projects with a brief overview of each, click the links to see more.</p>
+
+          <div class="row">
+            <div class="col s12">
+              <a class="teal-text bold" href="https://github.com/robclu/ripple">
+                <h4><i class="fas fa-wave-square"></i> Ripple</h4>
+              </a>
+              <p>
+                Ripple is a framework for large-scale heterogeneous compute, with a focus on multi-gpu systems. It requires minimal knowledge of parallel, distributed, or gpu programming, and will allow simple c++ code to scale to large systems.
+                <br><br>
+                It also supports polymorphic data layout, which allows user-defined classes to be stored as SoA or AoS, significantly
+                improving performance on the GPU.
+                <br><br>
+                It scales very well, having been used to scale real-world computational fluid dynamics up to 7.3x on an 8 GPU system.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <a class="teal-text bold" href="">
+                <h4><i class="fas fa-stream"></i> Fracture</h4>
+              </a>
+              <p>
+                Fracture is library to perform large-scale simulations of multiple interacting materials, such as between fluids, gasses,
+                and solids, using finite volume methods. It is currently a work in progress, however, simulations of high impact shock waves on air and helium bubbles and underwater explosions are examples of simulations which have been performed correctly.
+                <br><br>
+                On multi-gpu systems, it can be used to simulate 3D interactions in domains consisting of billions of cells in real-time. Support is currently being added for internal solid dynamics such as stress, strain, fracture, and void.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <a class="teal-text bold" href="https://github.com/robclu/flame">
+                <h4><i class="fas fa-fire"></i> Flame</h4>
+              </a>
+              <p>
+                A C++ library machine learning library built on PyTorch for fast inference of common object-detection and pose-estimation model. It is very much a work in progress, and used as a personal playground for implementing machine learning algorithms for understanding.
+                <br><br>
+                I intend to add models as I come across them and as I get time, and test the benefits for inference and training time when using the c++ PyTorch interface with custom CUDA implementations.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <a class="teal-text bold" href="https://github.com/robclu/snowflake">
+                <h4><i class="far fa-snowflake"></i> Snowflake</h4>
+              </a>
+              <p>
+                Snowflake is a rendering engine written in Vulkan. It has mostly been used to learn about Vulkan and entity component systems. It is not very complete at this stage, but I hope to extend the current functionality to allow for real-time rendering of the simulations for fracture, as I have found existing solutions for rendering large-scale simulation data limiting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script defer src="js/all.js"></script>
+    <!--load all styles -->
 
 </body>
 
