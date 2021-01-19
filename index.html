@@ -211,7 +211,7 @@
 
           <div class="col s11 offset-s1">
             <p>
-              R. Clucas, P. Blakely, N. Nikiforakis, Simulation of Multiple Interacting Materials on Multiple GPUs with the Ghost Fluid Method, Computer Physics Communications, 2021 [ <i class="teal-text fas fa-link"></i>
+              R. Clucas, P. Blakely, N. Nikiforakis, Simulation of Multiple Interacting Materials on Many GPUs with the Ghost Fluid Method, Journal of Computational Physics, 2021 [ <i class="teal-text fas fa-link"></i>
               <a class="teal-text">
                 Coming soon.
               </a>]
@@ -230,78 +230,255 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="projects">
-      <div class="row">
-        <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-          <h2 class="header center teal-text lighten-1">Projects</h2>
-          <hr style="border-color: #727878; opacity: 0.2">
-          <p>The following is a selected list of projects with a brief overview of each, click the links to see more.</p>
+  <div id="projects">
+    <div class="row">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h2 class="header center teal-text lighten-1">Projects</h2>
+        <hr style="border-color: #727878; opacity: 0.2">
+        <p class="center">
+          The following is a selected list of projects with a brief overview of each, click the links to see more.
+        </p>
 
-          <div class="row">
-            <div class="col s12">
-              <a class="teal-text bold" href="https://github.com/robclu/ripple">
-                <h4><i class="fas fa-wave-square"></i> Ripple</h4>
+        <div class="row">
+          <div class="col s12">
+            <h4 class="teal-text"><i class="fas fa-wave-square"></i> Ripple
+              <a class="teal-text" href="https://github.com/robclu/ripple">
+                <i class="fab fa-github" style="scale:0.75"></i>
               </a>
-              <p>
-                Ripple is a framework for large-scale heterogeneous compute, with a focus on multi-gpu systems. It requires minimal knowledge of parallel, distributed, or gpu programming, and will allow simple c++ code to scale to large systems.
-                <br><br>
-                It also supports polymorphic data layout, which allows user-defined classes to be stored as SoA or AoS, significantly
-                improving performance on the GPU.
-                <br><br>
-                It scales very well, having been used to scale real-world computational fluid dynamics up to 7.3x on an 8 GPU system.
-              </p>
-            </div>
+              <a class="teal-text" href="https://robclu.github.io/ripple_docs/">
+                <i class="fas fa-file-alt" style="scale:0.75"></i>
+              </a>
+            </h4>
+            <p>
+              Ripple is a framework for large-scale heterogeneous compute, with a focus on multi-gpu systems. It requires minimal knowledge of parallel, distributed, or gpu programming, and will allow simple c++ code to scale to large systems.
+              <br><br>
+              It also supports polymorphic data layout, which allows user-defined classes to be stored as SoA or AoS, significantly
+              improving performance on the GPU.
+              <br><br>
+              It scales very well, having been used to scale real-world computational fluid dynamics up to 7.3x on an 8 GPU system.
+            </p>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col s12">
-              <a class="teal-text bold" href="">
-                <h4><i class="fas fa-stream"></i> Fracture</h4>
-              </a>
-              <p>
-                Fracture is library to perform large-scale simulations of multiple interacting materials, such as between fluids, gasses,
-                and solids, using finite volume methods. It is currently a work in progress, however, simulations of high impact shock waves on air and helium bubbles and underwater explosions are examples of simulations which have been performed correctly.
-                <br><br>
-                On multi-gpu systems, it can be used to simulate 3D interactions in domains consisting of billions of cells in real-time. Support is currently being added for internal solid dynamics such as stress, strain, fracture, and void.
-              </p>
-            </div>
+        <div class="row">
+          <div class="col s12">
+            <h4 class="teal-text"><i class="fas fa-stream"></i> Fracture</h4>
+            <p>
+              Fracture is library to perform large-scale simulations of multiple interacting materials, such as between fluids, gasses,
+              and solids, using finite volume methods. It is currently a work in progress, however, simulations of high impact shock waves on air and helium bubbles and underwater explosions are examples of simulations which have been performed correctly.
+              <br><br>
+              On multi-gpu systems, it can be used to simulate 3D interactions in domains consisting of billions of cells in real-time. Support is currently being added for internal solid dynamics such as stress, strain, fracture, and void.
+            </p>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col s12">
-              <a class="teal-text bold" href="https://github.com/robclu/flame">
-                <h4><i class="fas fa-fire"></i> Flame</h4>
+        <div class="row">
+          <div class="col s12">
+            <h4 class="teal-text"><i class="fas fa-fire"></i> Flame
+              <a class="teal-text" href="https://github.com/robclu/flame">
+                <i class="fab fa-github" style="scale: 0.75"></i>
               </a>
-              <p>
-                A C++ library machine learning library built on PyTorch for fast inference of common object-detection and pose-estimation model. It is very much a work in progress, and used as a personal playground for implementing machine learning algorithms for understanding.
-                <br><br>
-                I intend to add models as I come across them and as I get time, and test the benefits for inference and training time when using the c++ PyTorch interface with custom CUDA implementations.
-              </p>
-            </div>
+            </h4>
+            <p>
+              A C++ library machine learning library built on PyTorch for fast inference of common object-detection and pose-estimation model. It is very much a work in progress, and used as a personal playground for implementing machine learning algorithms for understanding.
+              <br><br>
+              I intend to add models as I come across them and as I get time, and test the benefits for inference and training time when using the c++ PyTorch interface with custom CUDA implementations.
+            </p>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col s12">
-              <a class="teal-text bold" href="https://github.com/robclu/snowflake">
-                <h4><i class="far fa-snowflake"></i> Snowflake</h4>
+        <div class="row">
+          <div class="col s12">
+            <h4 class="teal-text"><i class="far fa-snowflake"></i> Snowflake
+              <a class="teal-text" href="https://github.com/robclu/snowflake">
+                <i class="fab fa-github" style="scale: 0.75"></i>
               </a>
-              <p>
-                Snowflake is a rendering engine written in Vulkan. It has mostly been used to learn about Vulkan and entity component systems. It is not very complete at this stage, but I hope to extend the current functionality to allow for real-time rendering of the simulations for fracture, as I have found existing solutions for rendering large-scale simulation data limiting.
-              </p>
-            </div>
+            </h4>
+            <p>
+              Snowflake is a rendering engine written in Vulkan. It has mostly been used to learn about Vulkan and entity component systems. It is not very complete at this stage, but I hope to extend the current functionality to allow for real-time rendering of the simulations for fracture, as I have found existing solutions for rendering large-scale simulation data limiting.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div id="skills">
+    <div class="row alternate" style="margin-bottom: 0;padding-bottom: 20px;">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h2 class="header center teal-text lighten-1">Skills</h2>
+        <hr style="border-color: #727878; opacity: 0.2">
+        <p class="center">
+          The following are the programming languages, frameworks, and compilers
+          while I am familiar with to varying degrees.
+        </p>
+        <div class="col m6">
+          <ul>
+            <li>
+              <span class="skill-title">C++</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">CUDA</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">C</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">Python</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">Rust</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">GCC</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col m6">
+          <ul>
+            <li>
+              <span class="skill-title">MPI</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">Clang</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">NVCC</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">OpenMP</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">PyTorch</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+            <li>
+              <span class="skill-title">Tensorflow</span>
+              <span class="skill-value teal-text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star black-text"></i>
+                <i class="fas fa-star black-text"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="contact">
+    <div class="row blue-grey darken-4 contact-row">
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+        <h3 class="header center teal-text lighten-1">Contact</h3>
+        <p class="center grey-text text-lighten-1">
+          If you'd like to get in touch, you can reach me at any of the following links.
+        </p>
+        <div class="row center">
+          <a class="icon teal-text lighten-1" href="https://github.com/robclu">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="icon teal-text lighten-1" href="https://www.linkedin.com/in/robert-clucas-24961a106">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="icon teal-text lighten-1" href="https://twitter.com/rob_clucas">
+            <i class="large fab fa-twitter"></i>
+          </a>
+          <a class="icon teal-text lighten-1" href="mailto:robjclucas@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script defer src="js/all.js"></script>
-    <!--load all styles -->
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script defer src="js/all.js"></script>
+  <!--load all styles -->
 
 </body>
 

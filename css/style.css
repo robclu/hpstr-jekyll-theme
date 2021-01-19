@@ -37,3 +37,16 @@
   padding-top: 15%;
   padding-bottom: 15%;
 }
+
+.skill-value {
+  font-size: 15px;
+}
+.skill-value {
+  float: right;
+  font-size: 14px;
+}
+
+.contact-row {
+  margin: 0;
+  padding: 20px;
+}
